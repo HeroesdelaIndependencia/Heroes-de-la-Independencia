@@ -1,0 +1,1002 @@
+/*/*Para el body*/
+body {
+    margin: 0; /* Para quitar los márgenes */
+    background-color: lightgray;
+}
+
+/* Header */
+header {
+    overflow: hidden; /* Evitar problemas de desplazamiento */
+    background-color: #218838; /* Color de fondo negro */
+    padding: 20px;
+    margin: 0%;
+}
+
+/* Para el título */
+.titulo {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff; /* Color blanco */
+    font-size: 1.5em;
+}
+
+.tituloi{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.subti{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff; /* Color blanco */;
+    text-align: center;
+    color: black;
+    font-size: 1.7em;
+}
+
+.img{
+    width: 150px;
+    height: 150px;
+}
+
+.fechaMH {
+    text-align: center;
+    font-weight: normal;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #555555; /* Color gris */
+    margin-top: -12px; /* Ajustar margen superior para acercar aún más */
+    margin-bottom: -10; /* Sin margen inferior */
+}
+
+.centrar-tabla {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.btn-jugar {
+
+    display: inline-block;
+    background-color: #fd7e14;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.5em;
+    margin-bottom: 80px; /* Esto añade separación entre las imágenes de las filas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto suave */
+} 
+
+.btn-jugar:hover {
+    background-color: #e8590c;
+    transform: scale(1.5); /* Aumenta el tamaño de la imagen un 10% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Agrega una sombra */
+}
+
+.centextM{
+    margin-bottom: 50px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1em;
+    font-family:'Times New Roman', Times, serif ;
+}
+
+.tablaparabotones{
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;   
+}
+
+.btn-jugar1 {
+    font-family: Comic Sans Ms ;
+    color: black;
+    width: 100px; /* Ancho fijo que asegura que ambos botones sean del mismo tamaño */
+    height: auto; /* Permite que la altura se ajuste de acuerdo con el padding */
+    display: inline-block;
+    background-color: #28a745;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1em; /* Ajusté el tamaño de fuente para que encaje mejor */
+    text-align: center; /* Centra el texto dentro del botón */
+    margin-bottom: 80px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+    
+.btn-jugar1:hover {
+    transform: scale(1.5); /* Aumenta el tamaño de la imagen un 10% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Agrega una sombra */
+}
+
+.tabla-botones div {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente */
+}
+
+.tabla-botones div a {
+   
+    text-align: center; /* Centra el texto dentro del enlace */
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+}
+
+.botondejuego{
+    width: 150px; /* Ancho fijo que asegura que ambos botones sean del mismo tamaño */
+    height: auto; /* Permite que la altura se ajuste de acuerdo con el padding */
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: Comic Sans Ms ;
+    font-size: 25px;
+    padding: 1em 1em;
+    background-color: #d1e70a; 
+    color: black;
+    width: 180px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.botondejuego:hover{
+    transform: scale(1.2); /* Escala el botón un 10% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Añade una sombra */
+}
+.botondejuego2{
+    
+    width: 100px; /* Ancho fijo que asegura que ambos botones sean del mismo tamaño */
+    height: auto; /* Permite que la altura se ajuste de acuerdo con el padding */
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: Comic Sans Ms ;
+    font-size: 25px;
+    padding: 1em 1em;
+    background-color: #049ef7; 
+    color: black;
+    width: 180px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.botondejuego2:hover{
+    transform: scale(1.2); /* Escala el botón un 10% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Añade una sombra */
+}
+
+.botondejuego3{
+    
+    width: 100px; /* Ancho fijo que asegura que ambos botones sean del mismo tamaño */
+    height: auto; /* Permite que la altura se ajuste de acuerdo con el padding */
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: Comic Sans Ms ;
+    font-size: 25px;
+    padding: 1em 1em;
+    background-color: #d62525; 
+    color: black;
+    width: 180px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.botondejuego3:hover{
+    transform: scale(1.2); /* Escala el botón un 10% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Añade una sombra */
+}
+
+
+/*Para el memorama*/
+.memorama {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 5 columnas */
+    gap: 10px; 
+    padding: 10px;
+    max-width: 100%;
+}
+
+.card {
+    perspective: 1000px;
+}
+
+.card .inner {
+    position: relative;
+    width: 90px;/*El tamaño de las cartas */
+    height: 90px;/*El tamaño de las cartas */
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+
+.card .front, .card .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.1);
+}
+
+.card .front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.card .back {
+    transform: rotateY(180deg);
+}
+
+.card.flipped .inner {
+    transform: rotateY(180deg);
+}
+
+.imgmemo{
+    width: 90px;
+    height: 90px;
+}
+
+.botondejuegome{
+    width: 150px; /* Ancho fijo que asegura que ambos botones sean del mismo tamaño */
+    height: auto; /* Permite que la altura se ajuste de acuerdo con el padding */
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: Comic Sans Ms ;
+    font-size: 1em;
+    padding: 1em 1em;
+    background-color: #3273be; 
+    color: black;
+    width: 180px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    margin-bottom: 20px;
+}
+.inte{
+    font-size: 2em;
+}
+/* El fondo del modal, oculto por defecto */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro transparente */
+}
+
+/* El contenido del modal */
+.modal-contenido {
+    background-color: white;
+    margin: 15% auto; /* Centrado vertical y horizontalmente */
+    padding: 20px;
+    border: 2px solid #28a745;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: aparecer 0.5s ease; /* Animación */
+}
+
+/* Botón de cerrar (X) */
+.cerrar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Animación de entrada */
+@keyframes aparecer {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+
+/*Para la trivia */
+
+
+.imgjuego{
+    width: 210px;
+    height: 210px;
+}
+
+.txtpregunta{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.botondejuegomh{
+    width: 150px; /* Ancho fijo que asegura que ambos botones sean del mismo tamaño */
+    height: 80; /* Permite que la altura se ajuste de acuerdo con el padding */
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: Comic Sans Ms ;
+    font-size: 25px;
+    padding: 1em 1em;
+    background-color: #d1e70a; 
+    color: black;
+    width: 180px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+.botondejuegomh:hover{
+    transform: scale(1.2); /* Escala el botón un 10% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Añade una sombra */
+}
+
+
+
+
+
+/* Header con posición relativa para controlar hijos */
+.encabezado {
+    position: relative;
+    background-color: #218838;
+    padding: 10px 40px;
+    text-align: center; /* Centra el texto */
+}
+
+
+/* Menú y engrane flotante en esquina */
+#menu-container {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+}
+
+/* Icono de configuración */
+.config-icon {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+/* Menú desplegable */
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background-color: black;
+    display: none;
+    z-index: 9999;
+    width: 180px;
+    border-radius: 5px;
+}
+
+.nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.nav li a:hover {
+    background-color: #458c86;
+}
+
+/* Mostrar menú al pasar el mouse */
+#menu-container:hover .nav {
+    display: block;
+}
+
+
+.tm{
+    text-decoration: none;
+    font-size: 1em ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/*trivia en insano*/
+
+/* Contenedor del juego */
+.contenedor-juego {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  /* Imagen del personaje o pregunta */
+  .imgjuego {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    border: 3px solid #218838;
+  }
+  
+  /* Texto de la pregunta */
+  .txtpregunta {
+    font-size: 1.4em;
+    font-family:'Times New Roman', Times, serif ;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Contenedor de botones */
+  #opciones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Botones de respuesta */
+  .boton-opcion {
+    font-size: 1.2em;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #218838;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .boton-opcion:hover {
+    background-color: #1a6f2f;
+  }
+
+
+/*ROOMPECABEZAS*/
+.botondejuego4{
+  width: 150px; /* Ancho fijo que asegura que ambos botones sean del mismo tamaño */
+  height: auto; /* Permite que la altura se ajuste de acuerdo con el padding */
+  display: inline-block;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-family: Comic Sans Ms ;
+  font-size: 25px;
+  padding: 1em 1em;
+  background-color: #f79e02;; 
+  color: black;
+  width: 180px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.botondejuego4:hover{
+  transform: scale(1.2); /* Escala el botón un 10% */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Añade una sombra */
+}
+/* Estilos generales */
+
+
+/* Contenedor principal del rompecabezas */
+#contenedor-rompecabezas {
+  width: 300px;
+  max-width: 360px;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Casillas donde se colocan las piezas */
+.casilla {
+  width: 90px;
+  aspect-ratio: 1 / 1;
+  background-color: #f0f0f0;
+  border: 2px dashed #4CAF50;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.casilla:hover {
+  background-color: #e0e0e0;
+}
+
+/* Contenedor de piezas (parte superior) */
+#piezas-superiores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  max-width: 360px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+/* Estilo para pieza seleccionada */
+.pieza-seleccionada {
+  border: 3px solid #4CAF50 !important;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.7) !important;
+  transform: none !important;
+  position: static !important;
+  z-index: auto !important;
+}
+
+/* Eliminar el posicionamiento absoluto del toque */
+.pieza-img {
+  position: static !important;
+  left: auto !important;
+  top: auto !important;
+
+  width: 90px;
+  height: 90px;
+  touch-action: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: grab;
+  object-fit: cover;
+  background-color: #e0e0e0;
+}
+
+.pieza-img:active {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0,0,0,0.3);
+  cursor: grabbing;
+  z-index: 100;
+}
+
+/* Pieza colocada en su casilla */
+.pieza-colocada {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+  position: static !important;
+  left: auto !important;
+  top: auto !important;
+  transform: none !important;
+  box-shadow: none;
+  cursor: default;
+}
+
+/* Mensaje del dato curioso */
+#dato-curioso {
+  font-size: 16px;
+  color: #333;
+  margin: 20px auto;
+  padding: 15px;
+  background: #ffffcc;
+  border: 1px solid #e6e600;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  text-align: center;
+  max-width: 90%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#dato-curioso.visible {
+  opacity: 1;
+}
+
+
+/*MODAL FALLA*/
+.modalj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-contenidoj {
+  background-color: #f44336; /* Color de fondo rojo para destacar */
+    padding: 40px; /* Aumenta el espacio interior */
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    width: 300px; /* Cambia el ancho máximo */
+}
+.textofalla{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5em;
+}
+.textofalla2{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.4em;
+}
+.cerrarj {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+}
+
+
+/*MODAL EXITO*/
+/* El fondo del modal, oculto por defecto */
+/* Modal backdrop */
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-y: auto; /* Permite scroll si es necesario */
+}
+
+/* Contenido del modal - Versión mejorada */
+.modal-contenido {
+  position: relative;
+  background-color: white;
+  margin: auto; /* Centrado automático */
+  padding: 25px;
+  border: 2px solid #28a745;
+  width: 75%;
+  max-width: 400px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: aparecer 0.5s ease;
+  
+  /* Centrado vertical perfecto */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Botón de cerrar (X) */
+.cerrare {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.cerrare:hover,
+.cerrare:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Versión responsive para móviles */
+@media (max-width: 480px) {
+  .modal-contenido {
+    width: 90%;
+    padding: 20px;
+    top: 45%; /* Ajuste fino para móviles */
+  }
+}
+
+/* Botón de cerrar */
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cerrar:hover {
+  color: #333;
+}
+
+/* Animación */
+@keyframes aparecer {
+  from { opacity: 0; transform: translate(-50%, -50%) scale(0.8); }
+  to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
+
+
+/* Tabla de botones */
+
+/* Efecto para cuando una pieza está siendo arrastrada */
+[draggable="true"] {
+  user-select: none;
+  -webkit-user-drag: element;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 480px) {
+  .titulo {
+    font-size: 20px;
+  }
+  
+  .subtiline {
+    font-size: 18px;
+  }
+  
+  .pieza-img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .btn-jugar1 {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
+/* Efecto de transición para las piezas */
+.pieza-img {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Estilo para cuando una casilla es objetivo de drop */
+.casilla.highlight {
+  background-color: #26bd53;
+  border-style: solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contenedor principal de toda la línea del tiempo */
+.contenedor-timeline {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    gap: 30px;
+  }
+  
+  /* Columna de fechas con línea */
+  .menu-fechas {
+    width: 150px;
+    padding-right: 20px;
+    border-right: 4px solid #218838;
+    margin-right: 20px;
+  }
+
+  .menu-fechas ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+  }
+  
+  .menu-fechas li {
+    margin: 40px 0;
+  }
+  
+  .menu-fechas a {
+    text-decoration: none;
+    color: #218838;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 1.8em;
+  }
+  
+  .menu-fechas a:hover {
+    color: darkgreen;
+  }
+  
+  /* Línea de tiempo de eventos */
+  .linea-tiempo {
+    flex: 1;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    scroll-behavior: smooth;
+  }
+  
+  /* Cada evento */
+  .evento {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 20px;
+    gap: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .evento:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .evento img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    border-right: 4px solid #218838;
+  }
+  
+  .contenido {
+    padding-left: 10px;
+    flex: 1;
+  }
+  
+  .contenido h2 {
+    margin: 0;
+    color: #218838;
+    font-size: 1.8em;
+    font-family: 'Georgia', serif;
+  }
+  
+  .contenido p {
+    margin-top: 1px;
+    font-size: 1.3em;
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+  
+  .subtiline{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff; /* Color blanco */;
+    text-align: center;
+    color: black;
+    font-size: 1.8em;
+  }
+
+
+
+
+/* Estilos responsivos para celulares */
+@media (max-width: 768px) {
+    .contenedor-timeline {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 10px;
+    }
+  
+    .menu-fechas {
+      width: 100%;
+      border-right: none;
+      border-bottom: 4px solid #218838;
+      margin-right: 0;
+      margin-bottom: 20px;
+      padding-right: 0;
+      padding-bottom: 10px;
+    }
+  
+    .menu-fechas ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      gap: 10px;
+    }
+  
+    .menu-fechas li {
+      margin: 0;
+    }
+  
+    .menu-fechas a {
+      font-size: 1em;
+      padding: 5px 10px;
+    }
+  
+    .linea-tiempo {
+      max-width: 100%;
+      padding-left: 0;
+    }
+  
+    .evento {
+      flex-direction: row; /* MANTENER IMAGEN Y TEXTO LADO A LADO */
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      text-align: left;
+      padding: 15px;
+      flex-wrap: wrap; /* Permite que baje si no cabe todo */
+    }
+  
+    .evento img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-right: 4px solid #218838;
+      border-bottom: none;
+    }
+  
+    .contenido {
+      padding: 0;
+      flex: 1;
+      min-width: 150px;
+    }
+  
+    .contenido h2 {
+      font-size: 1.2em;
+    }
+  
+    .contenido p {
+      font-size: 1em;
+    }
+  
+    .subtiline {
+      font-size: 1.5em;
+    }
+  }
+  

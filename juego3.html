@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Arrastra al Héroe</title>
+  <link rel="stylesheet" href="juego3.css">
+</head>
+<body>
+  <header>
+    <h1 class="titulo">Arrastra al héroe al lugar correcto</h1>
+  </header>
+
+  <main>
+    <div class="contenedor-juego">
+      <div class="zona-personajes" id="zona-personajes">
+        <!-- Personajes se insertarán dinámicamente -->
+      </div>
+
+      <div class="zona-destinos">
+        <div class="destino" data-correcto="Hidalgo">Dolores</div>
+        <div class="destino" data-correcto="Morelos">Chilpancingo</div>
+        <div class="destino" data-correcto="Aldama">San Miguel</div>
+        <!-- Puedes agregar más zonas -->
+      </div>
+    </div>
+  </main>
+
+  <div id="mensaje-final" style="display:none;" class="modal">
+    <div class="modal-contenido">
+      <h2>¡Felicidades!</h2>
+      <p>Colocaste correctamente a todos los héroes.</p>
+    </div>
+  </div>
+
+  <script src="juego3.js"></script>
+</body>
+</html>

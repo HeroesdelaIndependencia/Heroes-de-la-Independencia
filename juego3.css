@@ -1,0 +1,98 @@
+/*/*Para el body*/
+body {
+    margin: 0; /* Para quitar los márgenes */
+    background-color: lightgray;
+}
+
+/* Header */
+header {
+    overflow: hidden; /* Evitar problemas de desplazamiento */
+    background-color: #218838; /* Color de fondo negro */
+    padding: 20px;
+    margin: 0%;
+}
+
+/* Para el título */
+.titulo {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff; /* Color blanco */
+    font-size: 2em;
+}
+
+/* Para la línea con texto */
+
+.linea-con-texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -5; /* Sin márgenes */
+}
+
+.linea-con-texto:before, .linea-con-texto:after {
+    content: '';
+    flex-grow: 1;
+    background: #000000; /* Color de la línea negra */
+    height: 1px;
+}
+
+.linea-con-texto span {
+    padding: 0 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 2em;
+    color: #000000; /* Color negro */
+}
+
+.contenedor-juego {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .zona-personajes {
+    width: 45%;
+    border: 2px dashed #4CAF50;
+    padding: 10px;
+    min-height: 200px;
+    background-color: #e8ffe8;
+  }
+  
+  .zona-destinos {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .destino {
+    border: 2px solid #333;
+    padding: 20px;
+    background-color: #fffacd;
+    min-height: 80px;
+    font-weight: bold;
+  }
+  
+  .personaje {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: grab;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-contenido {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+  }

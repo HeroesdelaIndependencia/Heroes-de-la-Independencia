@@ -1,0 +1,1738 @@
+/*/*Para el body*/
+body {
+    margin: 0; /* Para quitar los márgenes */
+    background-color: lightgray;
+}
+
+/* Header */
+header {
+    overflow: hidden; /* Evitar problemas de desplazamiento */
+    background-color: #218838; /* Color de fondo negro */
+    padding: 20px;
+    margin: 0%;
+}
+
+/* Para el título */
+.titulo {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff; /* Color blanco */
+    font-size: 2em;
+}
+
+/* Para la línea con texto */
+
+.linea-con-texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -5; /* Sin márgenes */
+}
+
+.linea-con-texto:before, .linea-con-texto:after {
+    content: '';
+    flex-grow: 1;
+    background: #000000; /* Color de la línea negra */
+    height: 1px;
+}
+
+.linea-con-texto span {
+    padding: 0 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 2em;
+    color: #000000; /* Color negro */
+}
+
+.fechaMH {
+    text-align: center;
+    font-weight: normal;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #555555; /* Color gris */
+    margin-top: -12px; /* Ajustar margen superior para acercar aún más */
+    margin-bottom: -10; /* Sin margen inferior */
+}
+
+
+
+
+
+
+/*Css para las paginas de informacion*/
+.centextM{
+    text-align: justify;
+    font-size: 1.5em;
+    font-family: cursive;
+}
+.tablaMH{
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    padding: -12px;
+    margin: 0 auto; /* Centra la tabla horizontalmente */
+    align-items: center;      /* Centra verticalmente */
+    table-layout: fixed; /* Fija el ancho de las celdas */
+    
+}
+td {
+            width: 33%; /* Hace que todas las celdas tengan el mismo ancho */
+            text-align: center; /* Centra el contenido horizontalmente */
+            vertical-align: middle; /* Centra el contenido verticalmente */
+            padding: 20px; /* Espacio alrededor del contenido */
+        }
+.fechaMH{
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.6em;
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+.imgtext{
+    width: 350px;
+    height: 350px;
+    display: block; /* Hace que la imagen se comporte como un bloque */
+    margin: auto; /* Centra la imagen horizontalmente */
+}
+
+
+
+
+/* Imágenes */
+.img {
+    width: 250px;
+    height: 250px;
+    border: 500px;
+    border-radius: 10px;
+    margin-bottom: 80px; /* Esto añade separación entre las imágenes de las filas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto suave */
+}
+
+.img:hover {
+    transform: scale(1.5); /* Aumenta el tamaño de la imagen un 10% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Agrega una sombra */
+}
+
+
+
+
+
+/* Centrar tabla de botones */
+.tablaparabotones{
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;   
+}
+.centrar-tabla {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+/* Botones */
+
+.btn-jugar {
+
+    display: inline-block;
+    background-color: #fd7e14;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 4.2em;
+    margin-bottom: 80px; /* Esto añade separación entre las imágenes de las filas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto suave */
+} 
+
+.btn-jugar:hover {
+    background-color: #e8590c;
+    transform: scale(1.5); /* Aumenta el tamaño de la imagen un 10% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Agrega una sombra */
+}
+
+.img, .btn-jugar {
+    cursor: pointer; /* Cambia el cursor a "puntero" al pasar sobre imágenes y botones */
+}
+.btn-jugar1 {
+    font-family: Comic Sans Ms ;
+    color: black;
+
+        width: 100px; /* Ancho fijo que asegura que ambos botones sean del mismo tamaño */
+        height: auto; /* Permite que la altura se ajuste de acuerdo con el padding */
+        display: inline-block;
+        background-color: #28a745;
+        padding: 15px 25px;
+        text-decoration: none;
+        border-radius: 10px;
+        font-size: 1.6em; /* Ajusté el tamaño de fuente para que encaje mejor */
+        text-align: center; /* Centra el texto dentro del botón */
+        margin-bottom: 80px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+
+
+.btn-jugar1:hover {
+    transform: scale(1.5); /* Aumenta el tamaño de la imagen un 10% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Agrega una sombra */
+}
+
+.img, .btn-jugar1 {
+    cursor: pointer; /* Cambia el cursor a "puntero" al pasar sobre imágenes y botones */
+}
+
+.img, .btn-regresar {
+    cursor: pointer; /* Cambia el cursor a "puntero" al pasar sobre imágenes y botones */
+}
+
+
+
+
+/*Para la pagina de juegos*/
+.txt{
+    font-size: 4em;
+    text-align: center;
+}
+.tambtn{
+    height: 100px;
+    width: 200px;
+}
+.im {
+    width: 400px;
+    height: 400px;
+    border: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Esto añade separación entre las imágenes de las filas */
+}
+.txtpregunta{
+    font-size: 3.5em;
+    font-family: cursive;
+
+}
+/* Contenedor que coloca la imagen y los botones en fila */
+/* Centrar todo el contenedor imagen y botones */
+.contenedor-imagen-botones {
+    display: flex;
+    text-align: center;
+    width: 80%;
+    gap: 20px; /* Espacio entre la imagen y los botones */
+}
+  /* Ajusta el tamaño de la imagen si es necesario */
+.imgjuego {
+    width: 400px; /* Puedes ajustar el tamaño según sea necesario */
+    height: 400px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+
+}
+.imgjuego:hover{
+    transform: scale(1.09); /* Aumenta el tamaño de la imagen un 10% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Agrega una sombra */
+}
+  
+  /* Ajustes de los botones */
+.container {
+    display: flex;
+    flex-direction: column; /* Coloca los botones uno debajo del otro */
+    gap: 10px; /* Espacio entre los botones */
+}
+
+
+.botones-en-linea {
+    display: flex;
+    gap: 20px; /* Ajusta el espacio entre los botones */
+}
+
+
+.textopuntaje{
+    text-align: center;
+    font-size: 1.5em;
+    font-family: cursive;
+}
+
+/* El fondo del modal, oculto por defecto */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro transparente */
+}
+
+/* El contenido del modal */
+.modal-contenido {
+    background-color: white;
+    margin: 15% auto; /* Centrado vertical y horizontalmente */
+    padding: 20px;
+    border: 2px solid #28a745;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: aparecer 0.5s ease; /* Animación */
+}
+
+/* Botón de cerrar (X) */
+.cerrar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Animación de entrada */
+@keyframes aparecer {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+
+
+
+
+/*ROMPECABEZAS*/
+  /* Estilos básicos para el rompecabezas */
+  .puzzle-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+  }
+
+  .puzzle-piece {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+  }
+
+  .puzzle-piece.revealed {
+    background-size: 300px 300px;
+    background-image: url('imagenes/rompecabezas.jpg');
+  }
+
+  /* Centrar el rompecabezas en la página */
+  .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
+
+
+
+/*Memorama*/
+
+
+
+.memorama {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columnas */
+    gap: 20px; 
+    padding: 20px;
+    max-width: 1000px;
+}
+
+.card {
+    perspective: 1000px;
+}
+
+.card .inner {
+    position: relative;
+    width: 200px;/*El tamaño de las cartas */
+    height: 200px;/*El tamaño de las cartas */
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+
+.card .front, .card .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    border: 2px solid #cccccc;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.1);
+}
+
+.card .front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.card .back {
+    transform: rotateY(180deg);
+}
+
+.card.flipped .inner {
+    transform: rotateY(180deg);
+}
+
+.imgmemo{
+    width: 200px;
+    height: 200px;
+}
+
+.botondejuegome{
+    width: 150px; /* Ancho fijo que asegura que ambos botones sean del mismo tamaño */
+    height: auto; /* Permite que la altura se ajuste de acuerdo con el padding */
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: Comic Sans Ms ;
+    font-size: 25px;
+    padding: 1em 1em;
+    background-color: #3273be; 
+    color: black;
+    width: 180px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.botondejuegome:hover{
+    transform: scale(1.2); /* Escala el botón un 10% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Añade una sombra */
+}
+
+.botondejuego{
+    width: 150px; /* Ancho fijo que asegura que ambos botones sean del mismo tamaño */
+    height: auto; /* Permite que la altura se ajuste de acuerdo con el padding */
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: Comic Sans Ms ;
+    font-size: 25px;
+    padding: 1em 1em;
+    background-color: #d1e70a; 
+    color: black;
+    width: 180px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.botondejuego:hover{
+    transform: scale(1.2); /* Escala el botón un 10% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Añade una sombra */
+}
+.botondejuego2{
+    
+    width: 100px; /* Ancho fijo que asegura que ambos botones sean del mismo tamaño */
+    height: auto; /* Permite que la altura se ajuste de acuerdo con el padding */
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: Comic Sans Ms ;
+    font-size: 25px;
+    padding: 1em 1em;
+    background-color: #049ef7; 
+    color: black;
+    width: 180px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.botondejuego2:hover{
+    transform: scale(1.2); /* Escala el botón un 10% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Añade una sombra */
+}
+
+.botondejuego3{
+    
+    width: 100px; /* Ancho fijo que asegura que ambos botones sean del mismo tamaño */
+    height: auto; /* Permite que la altura se ajuste de acuerdo con el padding */
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: Comic Sans Ms ;
+    font-size: 25px;
+    padding: 1em 1em;
+    background-color: #d62525; 
+    color: black;
+    width: 180px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.botondejuego3:hover{
+    transform: scale(1.2); /* Escala el botón un 10% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Añade una sombra */
+}
+
+.botondejuego4 {
+    width: 220px; /* Ajusta el ancho para que el texto no se salga */
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: Comic Sans Ms;
+    font-size: 22px; /* Reducir ligeramente el tamaño del texto */
+    padding: 0.8em; /* Reducir el padding para hacer más espacio */
+    background-color: #28a745; 
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    white-space: nowrap; /* Asegura que el texto no haga salto de línea */
+}
+
+
+.botondejuego4:hover{
+    transform: scale(1.2); /* Escala el botón un 10% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Añade una sombra */
+}
+
+.inte{
+    text-align: center;
+    font-size: 1.8em;
+    font-family: cursive;
+}
+
+/*LINEA INSANA POR SI YA NO QUIERES QUE APARESCA EL BUG*/
+.hidden {
+    display: none;
+}
+
+/*PARA CELULARES */
+.tabla-botones {
+    display: grid;
+    grid-template-columns: repeat(3, auto); /* Tres columnas en pantallas grandes */
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para los botones y centrado del texto */
+.tabla-botones div {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente */
+}
+
+.tabla-botones div a {
+   
+    text-align: center; /* Centra el texto dentro del enlace */
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+}
+/*Pra botones de trivia*/
+.botondejuegomh{
+    width: 150px; /* Ancho fijo que asegura que ambos botones sean del mismo tamaño */
+    height: auto; /* Permite que la altura se ajuste de acuerdo con el padding */
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: Comic Sans Ms ;
+    font-size: 25px;
+    padding: 1em 1em;
+    background-color: #d1e70a; 
+    color: black;
+    width: 180px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+.botondejuegomh:hover{
+    transform: scale(1.2); /* Escala el botón un 10% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Añade una sombra */
+}
+.botondejuegob1{
+    width: 150px; /* Ancho fijo que asegura que ambos botones sean del mismo tamaño */
+    height: auto; /* Permite que la altura se ajuste de acuerdo con el padding */
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: Comic Sans Ms ;
+    font-size: 25px;
+    padding: 1em 1em;
+    background-color: #d1e70a; 
+    color: black;
+    width: 180px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+.botondejuegob1:hover{
+    transform: scale(1.2); /* Escala el botón un 10% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Añade una sombra */
+}
+
+
+/* Header con posición relativa para controlar hijos */
+.encabezado {
+    position: relative;
+    background-color: #218838;
+    padding: 10px 40px;
+    text-align: center; /* Centra el texto */
+}
+
+
+/* Menú y engrane flotante en esquina */
+#menu-container {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+/* Icono de configuración */
+.config-icon {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+/* Menú desplegable */
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    background-color: black;
+    display: none;
+    z-index: 9999;
+    width: 180px;
+    border-radius: 5px;
+}
+
+.nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.nav li a:hover {
+    background-color: #458c86;
+}
+
+/* Mostrar menú al pasar el mouse */
+#menu-container:hover .nav {
+    display: block;
+}
+
+
+.tm{
+    text-decoration: none;
+    font-size: 1em ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+/*trivia en insano*/
+
+/* Contenedor del juego */
+.contenedor-juego {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  /* Imagen del personaje o pregunta */
+  .imgjuego {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    border: 3px solid #218838;
+  }
+  
+  /* Texto de la pregunta */
+  .txtpregunta {
+    font-size: 1.4em;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Contenedor de botones */
+  #opciones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Botones de respuesta */
+  .boton-opcion {
+    font-size: 1.2em;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #218838;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .boton-opcion:hover {
+    background-color: #1a6f2f;
+  }
+
+
+
+
+/* Contenedor principal de toda la línea del tiempo */
+.contenedor-timeline {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    gap: 30px;
+  }
+  
+  /* Columna de fechas con línea */
+  .menu-fechas {
+    width: 150px;
+    padding-right: 20px;
+    border-right: 4px solid #218838;
+    margin-right: 20px;
+  }
+
+  .menu-fechas ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+  }
+  
+  .menu-fechas li {
+    margin: 40px 0;
+  }
+  
+  .menu-fechas a {
+    text-decoration: none;
+    color: #218838;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 1.8em;
+  }
+  
+  .menu-fechas a:hover {
+    color: darkgreen;
+  }
+  
+  /* Línea de tiempo de eventos */
+  .linea-tiempo {
+    flex: 1;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    scroll-behavior: smooth;
+  }
+  
+  /* Cada evento */
+  .evento {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 20px;
+    gap: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .evento:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .evento img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    border-right: 4px solid #218838;
+  }
+  
+  .contenido {
+    padding-left: 10px;
+    flex: 1;
+  }
+  
+  .contenido h2 {
+    margin: 0;
+    color: #218838;
+    font-size: 1.8em;
+    font-family: 'Georgia', serif;
+  }
+  
+  .contenido p {
+    margin-top: 1px;
+    font-size: 1.3em;
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+  
+  .subtiline{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff; /* Color blanco */;
+    text-align: center;
+    color: black;
+    font-size: 1.8em;
+  }
+
+
+
+  /*rompecabezas*/
+  .botondejuegor{
+    width: 150px; /* Ancho fijo que asegura que ambos botones sean del mismo tamaño */
+    height: auto; /* Permite que la altura se ajuste de acuerdo con el padding */
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: Comic Sans Ms ;
+    font-size: 25px;
+    padding: 1em 1em;
+    background-color: #f79e02;; 
+    color: black;
+    width: 180px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  }
+  
+  .botondejuegor:hover{
+    transform: scale(1.2); /* Escala el botón un 10% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Añade una sombra */
+  }
+
+.contenedor-rompecabezas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 10px;
+}
+
+.piezas-superiores {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.piezas-superiores img {
+  width: 100px;
+  height: 100px;
+  cursor: grab;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.rompecabezas {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 8px;
+  justify-content: center;
+}
+
+.casilla {
+  width: 100px;
+  height: 100px;
+  background-color: #e0e0e0;
+  border: 2px dashed #218838;
+  border-radius: 10px;
+}
+
+.dato-curioso {
+  margin-top: 30px;
+  padding: 15px 25px;
+  background-color: #218838;
+  color: white;
+  font-family: Georgia, serif;
+  font-size: 1.2em;
+  text-align: center;
+  border-radius: 12px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.dato-curioso.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+.pieza-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+
+  #dato-curioso {
+    transition: opacity 0.5s ease-in-out;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #218838;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    max-width: 80%;
+    text-align: center;
+}
+
+#dato-curioso.visible {
+    opacity: 1;
+}
+
+/*#dato-curioso:not(.visible) {
+    opacity: 0;
+    pointer-events: none;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*PARA CELULARES */
+/*POSDATA YA NO QUIERO*/
+@media (max-width: 600px) {
+    /*/*Para el body*/
+    body {
+        margin: 0; /* Para quitar los márgenes */
+        background-color: lightgray;
+    }
+
+    /* Header */
+    header {
+        overflow: hidden; /* Evitar problemas de desplazamiento */
+        background-color: #218838; /* Color de fondo negro */
+        margin: 0%;
+        width: 90%;
+    }
+
+    /* Para el título */
+    .titulo {
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #ffffff; /* Color blanco */
+        font-size: 1em;
+    }
+
+    /* Para la línea con texto */
+
+    .linea-con-texto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: -5; /* Sin márgenes */
+    }
+
+    .linea-con-texto:before, .linea-con-texto:after {
+        content: '';
+        flex-grow: 0.5;
+        background: #000000; /* Color de la línea negra */
+        height: 0.5px;
+    }
+
+    .linea-con-texto span {
+        padding: 0 10px;
+        font-weight: bold;
+        font-family: sans-serif;
+        font-size: .6em;
+        text-align: center;
+        color: #000000; /* Color negro */
+    }
+
+    .fechaMH {
+        text-align: center;
+        font-weight: normal;
+        font-family: sans-serif;
+        font-size: 1em;
+        color: #555555; /* Color gris */
+    }
+
+    .img {
+        width: 60px;
+        height: 60px;
+        border: 25px;
+        border-radius: 10px;
+        margin-bottom: 10px; /* Esto añade separación entre las imágenes de las filas */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto suave */
+    }
+    
+    br {
+        display: none;
+      }
+    
+
+    .btn-jugar {
+
+        display: inline-block;
+        background-color: #fd7e14;
+        color: white;
+        padding: 5px 15px;
+        text-decoration: none;
+        border-radius: 10px;
+        font-size: 1em;
+        margin-bottom: 20px; /* Esto añade separación entre las imágenes de las filas */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto suave */
+    } 
+    /*Para las paginas de info*/
+    .centextM{
+        text-align: justify;
+        font-size: .4em;
+        font-family: Arial;
+    }
+    .tablaMH{
+        text-align: center;
+        margin: 0 auto;
+        width: 90%;
+        padding: -12px;
+        margin: 0 auto; /* Centra la tabla horizontalmente */
+        align-items: center;      /* Centra verticalmente */
+        table-layout: fixed; /* Fija el ancho de las celdas */
+        
+    }
+    td {
+                width: 33%; /* Hace que todas las celdas tengan el mismo ancho */
+                text-align: center; /* Centra el contenido horizontalmente */
+                vertical-align: middle; /* Centra el contenido verticalmente */
+                padding: 0px; /* Espacio alrededor del contenido */
+            }
+    .fechaMH{
+        flex-direction: column;
+        text-align: center;
+        font-size: .8em;
+        font-family: sans-serif;
+        margin-top: 10px;
+    }
+    .imgtext{
+        width: 60px;
+        height: 60px;
+        display: block; /* Hace que la imagen se comporte como un bloque */
+        margin: auto; /* Centra la imagen horizontalmente */
+    }
+    .btn-jugar1 {
+        font-family: Comic Sans Ms;
+        color: black;
+        width: 50px; /* Ancho fijo */
+        height: 15px;
+        display: inline-block;
+        background-color: #28a745;
+        padding: 5px 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        font-size: .6em; /* Tamaño de fuente ajustado */
+        text-align: center;
+        margin-bottom: 80px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        vertical-align: middle;
+
+    }
+    
+       
+    
+    /*Para el menu de juego*/
+    /* Especifica la posición de cada botón en la cuadrícula */
+    .tabla-botones {
+        grid-template-columns: repeat(2, auto); /* Dos columnas */
+        grid-template-rows: auto auto; /* Dos filas */
+    }
+
+    /* Estilos para cada botón dentro del media query */
+    .botondejuego, .botondejuego2, .botondejuego3 {
+        width: 80px; /* Ancho fijo que asegura que ambos botones sean del mismo tamaño */
+        height: auto; /* Permite que la altura se ajuste de acuerdo con el padding */
+        display: inline-block;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-family: Comic Sans Ms ;
+        font-size: .9em;
+        padding: 10px 10px;
+        background-color: #d62525; 
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+
+    .botondejuego {
+        
+        background-color: #d1e70a;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .botondejuego2 {
+        background-color: #049ef7;
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .botondejuego3 {
+        background-color: #d62525;
+        grid-column: 1 / span 2; /* Ocupa ambas columnas de la segunda fila */
+        grid-row: 2;
+    }
+
+
+
+
+    /*Para la trivia*/
+    .imgjuego {
+        width: 60px; /* Puedes ajustar el tamaño según sea necesario */
+        height: 80px;
+        transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    
+    }
+    .txtpregunta{
+        font-size: .8em;
+        font-family: Arial;
+    }
+    .container {
+        display: flex;
+        flex-direction: column; /* Coloca los botones uno debajo del otro */
+        gap: 5px; /* Espacio entre los botones */
+    }
+    
+    
+    .botones-en-linea {
+        display: flex;
+        gap: 10px; /* Ajusta el espacio entre los botones */
+    }
+    
+    
+    .textopuntaje{
+        text-align: center;
+        font-size: .9em;
+        font-family: cursive;
+    }
+
+ .botondejuegomh{
+        width: 60px; /* Ancho fijo que asegura que ambos botones sean del mismo tamaño */
+        height: auto; /* Permite que la altura se ajuste de acuerdo con el padding */
+        display: inline-block;
+        font-family: Comic Sans Ms ;
+        font-size: .6em;
+        background-color: #d1e70a; 
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+        margin: 0; /* Elimina márgenes si los hay */
+        padding: 0.5em 0; /* Ajusta el padding según sea necesario */
+    }
+
+    .botondejuegob1{
+        width: 65px; /* Ancho fijo que asegura que ambos botones sean del mismo tamaño */
+        height: auto; /* Permite que la altura se ajuste de acuerdo con el padding */
+        display: inline-block;
+        font-family: Comic Sans Ms ;
+        font-size: .55em;
+        background-color: #d1e70a; 
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 15px;
+        transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+        margin: 0; /* Elimina márgenes si los hay */
+        padding: 0.5em 0; /* Ajusta el padding según sea necesario */
+    }
+
+    /*Para el memorama*/
+         .memorama {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 5 columnas */
+        gap: 10px; 
+        padding: 10px;
+        max-width: 100%;
+    }
+    
+    .card {
+        perspective: 1000px;
+    }
+    
+    .card .inner {
+        position: relative;
+        width: 90px;/*El tamaño de las cartas */
+        height: 90px;/*El tamaño de las cartas */
+        transform-style: preserve-3d;
+        transition: transform 0.8s;
+    }
+    
+    .card .front, .card .back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        border: 1px solid #cccccc;
+        box-shadow: 0 20px 20px rgba(0,0,0,0.1);
+    }
+    
+    .card .front {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333333;
+        color: #ffffff;
+    }
+    
+    .card .back {
+        transform: rotateY(180deg);
+    }
+    
+    .card.flipped .inner {
+        transform: rotateY(180deg);
+    }
+    
+    .imgmemo{
+        width: 90px;
+        height: 90px;
+    }
+    
+    .botondejuegome{
+        width: 150px; /* Ancho fijo que asegura que ambos botones sean del mismo tamaño */
+        height: auto; /* Permite que la altura se ajuste de acuerdo con el padding */
+        display: inline-block;
+        margin-left: 30px;
+        margin-right: 30px;
+        font-family: Comic Sans Ms ;
+        font-size: 1em;
+        padding: 1em 1em;
+        background-color: #3273be; 
+        color: black;
+        width: 180px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+        margin-bottom: 20px;
+    }
+    
+    .contenedor-timeline {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+      }
+    
+      .menu-fechas {
+        width: 100%;
+        border-right: none;
+        border-bottom: 4px solid #218838;
+        margin-right: 0;
+        margin-bottom: 20px;
+        padding-right: 0;
+        padding-bottom: 10px;
+      }
+    
+      .menu-fechas ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+      }
+    
+      .menu-fechas li {
+        margin: 0;
+      }
+    
+      .menu-fechas a {
+        font-size: 1em;
+        padding: 5px 10px;
+      }
+    
+      .linea-tiempo {
+        max-width: 100%;
+        padding-left: 0;
+      }
+    
+      .evento {
+        flex-direction: row; /* MANTENER IMAGEN Y TEXTO LADO A LADO */
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        text-align: left;
+        padding: 15px;
+        flex-wrap: wrap; /* Permite que baje si no cabe todo */
+      }
+    
+      .evento img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-right: 4px solid #218838;
+        border-bottom: none;
+      }
+    
+      .contenido {
+        padding: 0;
+        flex: 1;
+        min-width: 150px;
+      }
+    
+      .contenido h2 {
+        font-size: 1.2em;
+      }
+    
+      .contenido p {
+        font-size: 1em;
+      }
+    
+      .subtiline {
+        font-size: 1.5em;
+      }
+}
+/* Estilos generales para tabletas (ancho máximo de 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    /* Para el body */
+    body {
+        margin: 0; /* Para quitar los márgenes */
+        background-color: lightgray;
+    }
+
+    /* Header */
+    header {
+        background-color: #218838; /* Color de fondo */
+        margin: 0;
+    }
+
+    /* Para el título */
+    .titulo {
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #ffffff;
+        font-size: 1.5em;
+    }
+
+    /* Linea con texto */
+    .linea-con-texto {
+        width: 100%; /* Ajusta al 100% del contenedor */
+        max-width: 640px; /* O un máximo si es necesario */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto; /* Centrado en pantalla */
+    }
+
+    .linea-con-texto:before, .linea-con-texto:after {
+        content: '';
+        flex-grow: 1;
+        background: #000000;
+        height: 0.7px;
+    }
+
+.linea-con-texto span {
+    padding: 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 1em;
+    text-align: center;
+    color: #000000;
+}
+
+.fechaMH {
+    text-align: center;
+    font-weight: normal;
+    font-family: sans-serif;
+    font-size: 2em;
+    color: #555555; /* Color gris */
+}
+
+.img {
+    width: 180px;
+    height: 180px;
+    border: 10px;
+    border-radius: 30px;
+    margin-bottom: 30px; /* Esto añade separación entre las imágenes de las filas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto suave */
+}
+
+
+
+
+.btn-jugar {
+
+    display: inline-block;
+    background-color: #fd7e14;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 3em;
+    margin-bottom: 20px; /* Esto añade separación entre las imágenes de las filas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto suave */
+} 
+/*Para las paginas de info*/
+.centextM{
+    text-align: justify;
+    font-size: 1em;
+    font-family: Arial;
+}
+.tablaMH {
+    padding: 50px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%; /* Ajusta al 100% del contenedor */
+    max-width: 600px; /* Limita el ancho máximo */
+    align-items: center;
+    table-layout: fixed;
+ 
+}
+td {
+            width: 33%; /* Hace que todas las celdas tengan el mismo ancho */
+            text-align: center; /* Centra el contenido horizontalmente */
+            vertical-align: middle; /* Centra el contenido verticalmente */
+            padding: 5px; /* Espacio alrededor del contenido */
+        }
+.fechaMH{
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+.imgtext{
+    width: 140px;
+    height: 180px;
+    display: block; /* Hace que la imagen se comporte como un bloque */
+    margin: auto; /* Centra la imagen horizontalmente */
+}
+.btn-jugar1 {
+    font-family: Comic Sans Ms;
+    color: black;
+    width: 150px; /* Ancho fijo */
+    height: 50px;
+    display: inline-block;
+    background-color: #28a745;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 2em; /* Tamaño de fuente ajustado */
+    text-align: center;
+    margin-bottom: 80px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    vertical-align: middle;
+
+}
+
+   
+
+/*Para el menu de juego*/
+/* Especifica la posición de cada botón en la cuadrícula */
+.tabla-botones {
+    grid-template-columns: repeat(2, auto); /* Dos columnas */
+    grid-template-rows: auto auto; /* Dos filas */
+}
+
+/* Estilos para cada botón dentro del media query */
+.botondejuego, .botondejuego2, .botondejuego3 {
+    width: 200px; /* Ancho fijo que asegura que ambos botones sean del mismo tamaño */
+    height: auto; /* Permite que la altura se ajuste de acuerdo con el padding */
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: Comic Sans Ms ;
+    font-size: 2.5em;
+    padding: 10px 10px;
+    background-color: #d62525; 
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.botondejuego {
+    
+    background-color: #d1e70a;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.botondejuego2 {
+    background-color: #049ef7;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.botondejuego3 {
+    background-color: #d62525;
+    grid-column: 1 / span 2; /* Ocupa ambas columnas de la segunda fila */
+    grid-row: 2;
+}
+
+
+
+
+/*Para la trivia*/
+.imgjuego {
+    width: 180px; /* Puedes ajustar el tamaño según sea necesario */
+    height: 180px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+
+}
+.txtpregunta{
+    font-size: 1.5em;
+    font-family: Arial;
+}
+.container {
+    width: 90%;
+    display: flex;
+    flex-direction: column; /* Coloca los botones uno debajo del otro */
+    gap: 20px; /* Espacio entre los botones */
+}
+
+
+.botones-en-linea {
+    display: flex;
+    gap: 50px; /* Ajusta el espacio entre los botones */
+}
+
+
+.textopuntaje{
+    text-align: center;
+    font-size: 2em;
+    font-family: cursive;
+}
+
+.botondejuegomh{
+    width: 70px; /* Ancho fijo que asegura que ambos botones sean del mismo tamaño */
+    height: auto; /* Permite que la altura se ajuste de acuerdo con el padding */
+    display: inline-block;
+    font-family: Comic Sans Ms ;
+    font-size: 1em;
+    background-color: #d1e70a; 
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    margin: 0; /* Elimina márgenes si los hay */
+    padding: 0.5em 0; /* Ajusta el padding según sea necesario */
+}
+
+.botondejuegob1{
+    width: 75px; /* Ancho fijo que asegura que ambos botones sean del mismo tamaño */
+    height: auto; /* Permite que la altura se ajuste de acuerdo con el padding */
+    display: inline-block;
+    font-family: Comic Sans Ms ;
+    font-size: .8em;
+    background-color: #d1e70a; 
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    margin: 0; /* Elimina márgenes si los hay */
+    padding: 0.5em 0; /* Ajusta el padding según sea necesario */
+}
+
+.memorama {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 5 columnas */
+    gap: 20px; 
+    padding: 5px;
+    max-width: 100%;
+}
+
+.card {
+    perspective: 1000px;
+}
+
+.card .inner {
+    position: relative;
+    width: 150px;/*El tamaño de las cartas */
+    height: 150px;/*El tamaño de las cartas */
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+
+.card .front, .card .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.1);
+}
+
+.card .front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.card .back {
+    transform: rotateY(180deg);
+}
+
+.card.flipped .inner {
+    transform: rotateY(180deg);
+}
+
+.imgmemo{
+    width: 150px;
+    height: 150px;
+}
+
+.botondejuegome{
+    width: 150px; /* Ancho fijo que asegura que ambos botones sean del mismo tamaño */
+    height: auto; /* Permite que la altura se ajuste de acuerdo con el padding */
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: Comic Sans Ms ;
+    font-size: 1.5em;
+    padding: 1em 1em;
+    background-color: #3273be; 
+    color: black;
+    width: 180px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+
+/* Header con posición relativa para controlar hijos */
+.encabezado {
+    position: relative;
+    background-color: #218838;
+    padding: 10px 40px;
+    text-align: center; /* Centra el texto */
+}
+
+
+/* Menú y engrane flotante en esquina */
+#menu-container {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+}
+
+/* Icono de configuración */
+.config-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Menú desplegable */
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background-color: black;
+    display: none;
+    z-index: 9999;
+    width: 180px;
+    border-radius: 5px;
+}
+
+.nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.nav li a:hover {
+    background-color: #458c86;
+}
+
+/* Mostrar menú al pasar el mouse */
+#menu-container:hover .nav {
+    display: block;
+}
+
+
+.tm{
+    text-decoration: none;
+    font-size: 1em ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+}
