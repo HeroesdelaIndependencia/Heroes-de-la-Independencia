@@ -6,6 +6,7 @@
     <title>Rompecabezas - Independencia de México</title>
     <link rel="stylesheet" href="independenciacelular.css">
   </head>
+  
   <body>
     <header>
       <h1 class="titulo">La Independencia de México</h1>
@@ -16,46 +17,255 @@
         <h1 class="subtiline">Rompecabezas </h1>
       </section>
   
-      <!-- Área de piezas para arrastrar -->
-      <div id="piezas-superiores">
-        <!-- Las piezas se generan dinámicamente con JavaScript -->
-      </div>
-  
-      <!-- Tablero del rompecabezas -->
-      <div id="contenedor-rompecabezas">
-        <!-- Las casillas se generan dinámicamente con JavaScript -->
-      </div>
-  
-      <!-- Contenedor para datos curiosos -->
-      <div id="dato-curioso">
-        <!-- El contenido se inserta dinámicamente con JavaScript -->
-      </div>
-    </main>
-  
-    <!-- Modal de fallo -->
-    <div id="mensajeFalloModal" class="modalj" style="display:none;">
-      <div class="modal-contenidoj">
-        <span class="cerrarj" onclick="cerrarModal()">&times;</span>
-        <h2 class="textofalla">¡Ups! Estuviste cerca</h2>
-        <p class="textofalla2">Inténtalo de nuevo.</p>
-      </div>
+
+
+
+  <style>
+
+    .casilla {
+      width: 100px;
+      height: 100px;
+      border: 2px dashed #aaa;
+    }
+
+    .pieza-img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin: 3px;
+      border: 2px solid transparent;
+    }
+
+    .pieza-img.seleccionada {
+      border: 2px solid #28a745;
+    }
+
+    #piezas-superiores {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 10px 0;
+    }
+
+    #contenedor-rompecabezas {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+      gap: 5px;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .modal-falla,
+    .modal-felicidades {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+    }
+
+    .modal-contenido-falla {
+      background-color: #f44336;
+      padding: 30px;
+      border-radius: 10px;
+      color: white;
+      width: 280px;
+      position: relative;
+    }
+
+    .modal-contenido-felicidades {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      border: 2px solid #28a745;
+      width: 280px;
+      position: relative;
+      color: #000;
+    }
+
+    .cerrarj {
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .dato-curioso {
+      position: fixed;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #218838;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      pointer-events: none;
+    }
+
+    .dato-curioso.visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+
+  </style>
+
+ <center>
+  <div id="piezas-superiores"></div>
+  <div id="contenedor-rompecabezas"></div>
+  <div id="dato-curioso" class="dato-curioso"></div>
+
+  <!-- Modal de Error -->
+  <div id="modalFalla" class="modal-falla">
+    <div class="modal-contenido-falla">
+      <span class="cerrarj" onclick="cerrarModalFalla()">&times;</span>
+      <h2>¡Ups!</h2>
+      <p>Esa pieza no va ahí, inténtalo de nuevo.</p>
     </div>
-    <!-- Modal de éxito -->
-    <div id="mensajeModal" class="modal">
-      <div class="modal-contenido">
-        <span class="cerrare" onclick="cerrarModal()">&times;</span>
-        <h2>¡Felicidades!</h2>
-          <p>Has completado el rompecabezas, ¡Sigue así!</p>
-      </div>
   </div>
-    <!-- Botones de navegación -->
-    <table class="tablaparabotones">
-      <tr>
-        <td><a href="menujuegoc.html" class="btn-jugar1">Menú Juegos</a></td>
-        <td><a href="menucelular.html" class="btn-jugar1">Ir a Inicio</a></td>
-      </tr>
-    </table>
-  
-    <script src="juego4celular.js"></script>
-  </body>
-  </html>
+
+  <!-- Modal de Éxito -->
+  <div id="modalFelicidades" class="modal-felicidades">
+    <div class="modal-contenido-felicidades">
+      <span class="cerrarj" onclick="cerrarModalFelicidades()">&times;</span>
+      <h2>¡Felicidades!</h2>
+      <p>Has completado el rompecabezas. ¡Sigue así!</p>
+    </div>
+  </div>
+
+  <!-- Botones -->
+  <div>
+    <a href="menujuegoc.html" class="btn-jugar1">Menú Juegos</a>
+    <a href="menucelular.html" class="btn-jugar1">Ir a Inicio</a>
+  </div>
+
+  <script>
+    const piezas = [
+      { id: 1, src: 'imagenes/p1.jpg' },
+      { id: 2, src: 'imagenes/p2.jpg' },
+      { id: 3, src: 'imagenes/p3.jpg' },
+      { id: 4, src: 'imagenes/p4.jpg' },
+      { id: 5, src: 'imagenes/p5.jpg' },
+      { id: 6, src: 'imagenes/p6.jpg' },
+      { id: 7, src: 'imagenes/p7.jpg' },
+      { id: 8, src: 'imagenes/p8.jpg' },
+      { id: 9, src: 'imagenes/p9.jpg' }
+    ];
+
+    let piezaSeleccionada = null;
+    let piezasColocadas = 0;
+    const totalPiezas = piezas.length;
+
+    const datosCuriosos = [
+      "Miguel Hidalgo usó estandartes con la Virgen de Guadalupe.",
+      "El Grito de Dolores se dio el 16 de septiembre de 1810.",
+      "José María Morelos organizó el Congreso de Chilpancingo.",
+      "Los insurgentes usaban armas improvisadas como palos y piedras.",
+      "La guerra duró más de 10 años.",
+      "Vicente Guerrero continuó la lucha después de la muerte de Morelos.",
+      "El cura Hidalgo fue ejecutado en 1811.",
+      "La independencia fue consumada por Agustín de Iturbide en 1821.",
+      "Las mujeres también participaron como mensajeras y espías.",
+      "La lucha por la independencia inspiró a otros países latinoamericanos."
+    ];
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const piezasSuperiores = document.getElementById("piezas-superiores");
+      const contenedorRompecabezas = document.getElementById("contenedor-rompecabezas");
+      const datoCurioso = document.getElementById("dato-curioso");
+
+      const piezasMezcladas = [...piezas].sort(() => Math.random() - 0.5);
+
+      piezasMezcladas.forEach(pieza => {
+        const img = document.createElement("img");
+        img.src = pieza.src;
+        img.classList.add("pieza-img");
+        img.dataset.id = pieza.id;
+        img.addEventListener("click", seleccionarPieza);
+        piezasSuperiores.appendChild(img);
+      });
+
+      for (let i = 1; i <= totalPiezas; i++) {
+        const casilla = document.createElement("div");
+        casilla.classList.add("casilla");
+        casilla.dataset.id = i;
+        casilla.addEventListener("click", () => colocarPieza(casilla));
+        contenedorRompecabezas.appendChild(casilla);
+      }
+
+      function seleccionarPieza(e) {
+        const imagen = e.target;
+        if (piezaSeleccionada) {
+          piezaSeleccionada.classList.remove("seleccionada");
+        }
+        piezaSeleccionada = imagen;
+        piezaSeleccionada.classList.add("seleccionada");
+      }
+
+      function colocarPieza(casilla) {
+        if (!piezaSeleccionada) return;
+
+        const idPieza = parseInt(piezaSeleccionada.dataset.id);
+        const idCasilla = parseInt(casilla.dataset.id);
+
+        if (idPieza === idCasilla) {
+          const nuevaImg = piezaSeleccionada.cloneNode(true);
+          nuevaImg.classList.remove("seleccionada");
+          casilla.appendChild(nuevaImg);
+          piezaSeleccionada.remove();
+          piezaSeleccionada = null;
+
+          piezasColocadas++;
+          mostrarDatoCurioso();
+
+          if (piezasColocadas === totalPiezas) {
+            mostrarModalFelicidades();
+          }
+        } else {
+          mostrarModalFalla();
+        }
+      }
+
+      function mostrarDatoCurioso() {
+        const texto = datosCuriosos[Math.floor(Math.random() * datosCuriosos.length)];
+        datoCurioso.textContent = texto;
+        datoCurioso.classList.add("visible");
+
+        setTimeout(() => {
+          datoCurioso.classList.remove("visible");
+        }, 3000);
+      }
+    });
+
+    function mostrarModalFalla() {
+      document.getElementById("modalFalla").style.display = "flex";
+    }
+
+    function mostrarModalFelicidades() {
+      document.getElementById("modalFelicidades").style.display = "flex";
+    }
+
+    function cerrarModalFalla() {
+      document.getElementById("modalFalla").style.display = "none";
+    }
+
+    function cerrarModalFelicidades() {
+      document.getElementById("modalFelicidades").style.display = "none";
+    }
+
+    window.cerrarModalFalla = cerrarModalFalla;
+    window.cerrarModalFelicidades = cerrarModalFelicidades;
+  </script>
+  </center>
+</body>
+</html>
